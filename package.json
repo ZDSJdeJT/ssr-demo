@@ -1,0 +1,25 @@
+{
+  "name": "ssr",
+  "module": "src/server.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun -b --hot --watch --env-file=.env.development run hmr.ts",
+    "start": "bun -b --env-file=.env.production run src/server.tsx",
+    "build": "bun -b run build.ts",
+    "lint": "biome lint --write ./src",
+    "format": "biome format --write ./src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.3",
+    "@types/bun": "latest",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
