@@ -3,7 +3,7 @@
   "module": "src/server.tsx",
   "type": "module",
   "scripts": {
-    "dev": "bun -b --hot --watch --env-file=.env.development run hmr.ts",
+    "dev": "bun -b --hot --env-file=.env.development run hmr.ts",
     "start": "bun -b --env-file=.env.production run src/server.tsx",
     "build": "bun -b run build.ts",
     "lint": "biome lint --write ./src",
