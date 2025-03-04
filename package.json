@@ -4,7 +4,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "author": "Echo",
+  "author": "Echo <zdsjdejt@qq.com>",
   "scripts": {
     "dev": "bun -b --hot --env-file=.env.development run hmr.ts",
     "start": "bun -b --env-file=.env.production run src/server.tsx",
